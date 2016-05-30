@@ -34,7 +34,7 @@ The response is then stored in a flat file in the same directory, and then an ap
 The user can then chose to verify another email at anytime.
 
 For the frontend development I used HTML for markup, javascript/AJAX for interactivity and Synchronity between the client and server.
-This adds prevents the page from doing a refresh while the verification is being done. when the reponse/result is ready then it will populate the relevant section of the page without a reload.
+This adds dynamism and prevents the page from doing a refresh while the verification is being done. when the reponse/result is ready then it will populate the relevant section of the page without a reload.
 
 for the frontend i used PHP for the scripting to send and recieve the email address to verify and result respectively.
 I personally like AJAX because of dynamics and PHP because i am familiar with it.
@@ -49,7 +49,7 @@ I have always had a passion and preference for frontend however i am always will
 		Question 3 Answer
 ************************************* *************************************
 I would prefer to fight 100 duck sized horses. This is like having a huge problem, if you break it down into individual parts then you might be better able to solve 
-it in smaller parts to reach a collective or larger solution. 
+it in smaller parts to reach a collective or larger solution.  (in this case- to defeat all the ducks)
 
 
 Instructions to run/use App: 
