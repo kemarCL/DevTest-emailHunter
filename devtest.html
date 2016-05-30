@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dev test-kemar</title>
+	<style type="text/css">
+        
+        //layout style for the frontend of the devtest app
+
+	body
+	{
+	padding: 10px;
+	}
+	
+	h1
+	{
+		font-family: helvectia;
+		color: grey;
+		text-decoration: italic;
+	}
+       
+	.textB
+	{
+		border: 1px solid grey;
+		height: 26px;
+		width: 200px;
+		padding: 5px;
+	}
+	.btn
+	{
+		background-color: grey;
+		color: white;
+		height: 38px;
+		width: 80px;
+		border: none;
+	}
+	.btn:hover
+	{
+			background-color: teal;
+	}
+	</style>
+
+	<script>
+        //AJAX function to pass and recieve data to and from backend
+        function verify(str) {
+    
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                document.getElementById("result").innerHTML = 
+             xmlhttp.responseText;
+            }
+        };
+        
+        //opening and sending the request along with relevant data
+        
+                 xmlhttp.open("POST", "backend.php" , true);
+                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlhttp.send("email="+str);        
+
+}
+</script>
+
+</head>
+
+<body>
+<!--Markup for the form element to enter email address -->
+<h1>Email Verification tool</h1>
+		<form action="backend.php" method="">
+			<input type="text" class="textB" name="email" id="emailAdd" placeholder="Enter email" />
+			<input type="button" class="btn" value="verify" onclick="verify(email.value)">
+		</form>
+
+<!--End of form section -->
+
+		<!-- Results will be displayed here -->
+	<p id="result"></p>
+</body>
+</html>			
