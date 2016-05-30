@@ -52,5 +52,15 @@ I would prefer to fight 100 duck sized horses. This is like having a huge proble
 it in smaller parts to reach a collective or larger solution. 
 
 
+Instructions to run/use App: 
+1) upload both files to public_html directory on a PHP server
+2) Navigate to devtest.html
+3) Enter email address to verify 
+4) results will be displayed below search box.
+   showing status "deliverable", "risky", or "deliverable".
+
+
+
+
 
 
