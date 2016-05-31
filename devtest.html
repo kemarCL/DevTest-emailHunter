@@ -42,7 +42,7 @@
 	<script>
         //AJAX function to pass and recieve data to and from backend
         function verify(str) {
-    
+       document.getElementById("result").innerHTML =" ";
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
