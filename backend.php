@@ -6,7 +6,7 @@
 
 */
 
-//Code below checks if and email was posted 
+//Code below checks if an email was posted 
 if (isset($_POST["email"])) 
 {
 
@@ -20,7 +20,7 @@ if (isset($_POST["email"]))
     curl_close($handle);
 
 
-     //code below prepares or create the file to write the response to
+     //code below prepares or create the file to write the API response to
 
     $ini= fopen('results.txt', 'a');
 
