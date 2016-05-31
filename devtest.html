@@ -53,7 +53,10 @@
         };
         
         //opening and sending the request along with relevant data
-        
+           if(str==="") //quick validation on input
+               document.getElementById("result").innerHTML ="You must enter an email";
+               
+            else
                  xmlhttp.open("POST", "backend.php" , true);
                 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 xmlhttp.send("email="+str);        
