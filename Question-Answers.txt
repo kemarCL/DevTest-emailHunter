@@ -37,7 +37,8 @@ For the frontend development I used HTML for markup, javascript/AJAX for interac
 This adds dynamism and prevents the page from doing a refresh while the verification is being done. when the reponse/result is ready then it will populate the relevant section of the page without a reload.
 
 For the backend i used PHP for the scripting to send and recieve the email address to verify and result respectively.
-I personally like AJAX because of dynamics and PHP because i am familiar with it. I also used an additional library named "cUrl" which  facilitates the hassle-free transmission of HTTP request from PHP scripts.
+ I also used an additional library named "cUrl" which  facilitates the hassle-free transmission of HTTP request from PHP scripts.
+ I personally like AJAX because of dynamics and PHP because i am familiar with it. Using cUrl was new for me so I learnt the concepts and the implementation went pretty well for this exercise.
 
 
 		Question 2 Answer
